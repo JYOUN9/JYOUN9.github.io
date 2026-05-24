@@ -320,6 +320,17 @@ function isMobileDevice() {
 	return typeof md !== 'undefined' && md.mobile();
 }
 
+function shouldUseHomePointerInteraction() {
+	return window.innerWidth > 599 && !isMobileDevice();
+}
+
+function syncHomePointerInteraction() {
+	HOME_POINTER_INTERACTION = shouldUseHomePointerInteraction();
+	if (!HOME_POINTER_INTERACTION) {
+		isMouseDown = false;
+	}
+}
+
 function getParticleZoom() {
 	if (window.innerWidth <= 599) {
 		return MOBILE_PARTICLE_ZOOM;
@@ -486,6 +497,7 @@ var init = function () {
 	imagedata = getImageData(image);
 	drawTheMap();
 
+	syncHomePointerInteraction();
 	if (HOME_POINTER_INTERACTION) {
 		window.addEventListener('mousemove', onMousemove, false);
 		window.addEventListener('mousedown', onMousedown, false);
@@ -500,6 +512,7 @@ var init = function () {
 var onResize = function () {
 	ww = window.innerWidth;
 	wh = window.innerHeight;
+	syncHomePointerInteraction();
 	renderer.setSize(ww, wh);
 	camera.left = ww / -2;
 	camera.right = ww / 2;
@@ -808,6 +821,7 @@ function loadProject() {
 		//  CALLBACK
 		Router.listen();
 		Submit.listen('.submit');
+		syncHomePointerInteraction();
 		Stars.init();
 		init();
 		setTimeout(function () {

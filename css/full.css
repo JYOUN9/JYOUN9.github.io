@@ -1677,7 +1677,7 @@ html.theme-dark .site-copyright {
 
   .header-links ul {
     margin: 0;
-    padding-right: 64px;
+    padding-right: 8px;
   }
 
   .header-links li {
@@ -1689,6 +1689,12 @@ html.theme-dark .site-copyright {
     float: right;
     padding: 12px 8px !important;
     pointer-events: auto;
+  }
+
+  .embedded-home canvas {
+    pointer-events: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
   }
 }
 
