@@ -38,7 +38,7 @@ social_links:
     icon: fig/icon/instagram.svg
     fallback_icon: fa-instagram
   - label: ORCID
-    url: "#orcid"
+    url: "https://orcid.org/0009-0004-4669-3524"
     title: ORCID
     icon: fig/icon/orcid.svg
     fallback_icon: fa-id-card-o
