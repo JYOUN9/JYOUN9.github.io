@@ -4,7 +4,7 @@ heading:
 contacts:
   - cjyoung@dgist.ac.kr
 links:
-  - label: Copy My Email
+  - label: Copy my Email
     copy_email: cjyoung@dgist.ac.kr
     title: Copy email address
     color: color-yellow
