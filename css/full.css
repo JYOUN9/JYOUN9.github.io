@@ -1691,10 +1691,23 @@ html.theme-dark .site-copyright {
     pointer-events: auto;
   }
 
+  .embedded-home,
+  .home-embed,
+  .embedded-home .wrapper,
+  .embedded-home .wrapper .container,
+  .embedded-home .template,
+  .embedded-home .template main,
   .embedded-home canvas {
     pointer-events: none;
     -ms-touch-action: pan-y;
     touch-action: pan-y;
+  }
+
+  .embedded-home .template main,
+  .embedded-home .template main a,
+  .embedded-home .home-social-link,
+  .embedded-home .home-stats {
+    pointer-events: auto;
   }
 }
 

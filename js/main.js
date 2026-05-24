@@ -809,7 +809,7 @@ var md = new MobileDetect(window.navigator.userAgent);
 $(document).ready(function () {
   Identity.work();
   if ($.fn.mCustomScrollbar) {
-    $('.template main').mCustomScrollbar({
+    $('.template:not([data-template=home]) main').mCustomScrollbar({
       theme: 'dark'
     });
   }
