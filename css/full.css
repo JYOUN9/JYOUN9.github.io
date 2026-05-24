@@ -867,7 +867,7 @@ html.theme-dark .biography-photo {
   display: flex;
   gap: 30px;
   overflow: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   scrollbar-width: none;
 }
 

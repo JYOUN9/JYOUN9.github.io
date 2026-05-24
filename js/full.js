@@ -266,16 +266,42 @@ $(document).ready(function () {
 
   updateHomeShrink();
 
-  var updateNewsCarouselButtons = function () {
+  var newsCarouselTargetScroll = null;
+
+  var getNewsCarouselMetrics = function () {
     var list = $(".news-list");
+    var firstItem = list.find(".news-item").first();
+
+    if (!list.length || !firstItem.length) {
+      return null;
+    }
+
+    var gap = parseFloat(list.css("column-gap")) || parseFloat(list.css("gap")) || 0;
+    var step = firstItem.outerWidth() + gap;
+    var maxScroll = Math.max(0, list[0].scrollWidth - list.outerWidth());
+
+    if (!step) {
+      return null;
+    }
+
+    return {
+      list: list,
+      step: step,
+      maxScroll: maxScroll
+    };
+  };
+
+  var updateNewsCarouselButtons = function () {
+    var metrics = getNewsCarouselMetrics();
+    var list = metrics && metrics.list;
     var maxScroll = 0;
     var currentScroll = 0;
     var canScrollLeft = false;
     var canScrollRight = false;
 
-    if (list.length) {
-      maxScroll = Math.max(0, list[0].scrollWidth - list.outerWidth());
-      currentScroll = list.scrollLeft();
+    if (list && list.length) {
+      maxScroll = metrics.maxScroll;
+      currentScroll = newsCarouselTargetScroll == null ? list.scrollLeft() : newsCarouselTargetScroll;
       canScrollLeft = currentScroll > 1;
       canScrollRight = currentScroll < maxScroll - 1;
     }
@@ -291,42 +317,55 @@ $(document).ready(function () {
       .toggleClass("is-disabled", !canScrollRight);
   };
 
-  var loadMoreNewsIfNeeded = function () {
-    var list = $(".news-list");
+  var loadMoreNewsIfNeeded = function (scrollPosition) {
+    var metrics = getNewsCarouselMetrics();
+    var list = metrics && metrics.list;
 
-    if (!list.length || !window.loadMoreNewsItems) {
+    if (!list || !list.length || !window.loadMoreNewsItems) {
       return false;
     }
 
-    var maxScroll = Math.max(0, list[0].scrollWidth - list.outerWidth());
-    var nearEnd = list.scrollLeft() >= maxScroll - 2;
+    var maxScroll = metrics.maxScroll;
+    var position = scrollPosition == null ? list.scrollLeft() : scrollPosition;
+    var nearEnd = position >= maxScroll - 2;
 
     return nearEnd ? window.loadMoreNewsItems() : false;
   };
 
   var moveNewsCarousel = function (direction) {
-    var list = $(".news-list");
-    var firstItem = list.find(".news-item").first();
+    var metrics = getNewsCarouselMetrics();
 
-    if (!list.length || !firstItem.length) {
+    if (!metrics) {
       return;
     }
 
-    var gap = parseFloat(list.css("column-gap")) || parseFloat(list.css("gap")) || 0;
-    var step = firstItem.outerWidth() + gap;
+    var list = metrics.list;
+    var baseScroll = newsCarouselTargetScroll == null ? list.scrollLeft() : newsCarouselTargetScroll;
+
     if (direction > 0) {
-      loadMoreNewsIfNeeded();
+      loadMoreNewsIfNeeded(baseScroll);
+      metrics = getNewsCarouselMetrics();
+      if (!metrics) {
+        return;
+      }
     }
 
-    var maxScroll = Math.max(0, list[0].scrollWidth - list.outerWidth());
-    var nextScroll = Math.max(0, Math.min(maxScroll, list.scrollLeft() + step * direction));
+    list = metrics.list;
+    var currentIndex = Math.round(baseScroll / metrics.step);
+    var nextScroll = Math.max(0, Math.min(metrics.maxScroll, (currentIndex + direction) * metrics.step));
+
+    newsCarouselTargetScroll = nextScroll;
+    updateNewsCarouselButtons();
 
     list.stop().animate(
       {
         scrollLeft: nextScroll
       },
       300,
-      updateNewsCarouselButtons
+      function () {
+        newsCarouselTargetScroll = null;
+        updateNewsCarouselButtons();
+      }
     );
   };
 
@@ -340,10 +379,18 @@ $(document).ready(function () {
 
   $(".news-list").on("scroll", function () {
     loadMoreNewsIfNeeded();
+    if (newsCarouselTargetScroll == null) {
+      updateNewsCarouselButtons();
+    }
+  });
+  $(window).on("resize personal-page-newschange", function () {
+    newsCarouselTargetScroll = null;
+    $(".news-list").stop();
     updateNewsCarouselButtons();
   });
-  $(window).on("resize personal-page-newschange", updateNewsCarouselButtons);
-  window.addEventListener("personal-page-newschange", updateNewsCarouselButtons);
+  window.addEventListener("personal-page-newschange", function () {
+    updateNewsCarouselButtons();
+  });
   updateNewsCarouselButtons();
 
   $(".work-patent-meta").each(function () {
