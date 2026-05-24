@@ -1,0 +1,20 @@
+label: Patents
+items:
+  - badge: Domestic
+    id: patent-egghand
+    title: Foundation Model Framework for Egocentric Hand Motion Perception, Prediction, and Planning
+    inventors: Daehee Park, **Jaeyoung Choi**, Hyeondong Kim, Yujin Kim 
+    application_no: 10-2025-0209315
+#    registration_no:
+#    link:
+#      label: Link
+#      link: "#patent-link"
+
+#  - badge: International
+#    title: Adaptive Interaction Layout System for Personal Web Interfaces
+#    inventors: Yahia Refaiea
+#    application_no: 10-2026-0000000
+#    registration_no: 10-0000000
+#    link:
+#      label: Link
+#      link: "#patent-link"

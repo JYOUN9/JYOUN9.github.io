@@ -1,0 +1,70 @@
+label: Projects
+items:
+  - badge: R & D
+    id: projects-samsung
+    title: Development of a Generative AI-Based 16-bit HDR Solution
+    period: 2025.05 - 2027.04
+    institution: Samsung LSI
+    keywords:
+      - 16-bit HDR Tone Mapping
+      - Diffusion-based Generative AI
+      - Computer Vision
+  - badge: R & D
+    id: projects-Prosecutors
+    title: Research on Utilizing Generative AI for Prosecution Case Management
+    period: 2023.09 - 2023.12
+    institution: Supreme Prosecutors' Office
+    keywords:
+      - Practical Application
+      - Generative AI
+      - Prosecutorial Case Processing
+    link:
+      label: Link
+      link: "https://news.unn.net/news/articleView.html?idxno=559931"
+  - badge: University
+    title: Sonic-AI ("Real-Time Emergency Textualization")
+    period: 2023.09 - 2023.12
+    institution: The Catholic University of Korea
+    keywords:
+      - Real-Time Emergency Detection
+      - Analysis Through Sound with Text Reporting
+      - STT & LLM
+    link:
+      label: Link
+      link: "https://github.com/koreanmarine/Sonic-AI#sonic-aireal-time-emergency-textualization"
+  - badge: University
+    title: Development of AI for Orbit Anomaly Detection of Satellites (KOMPSAT-3, 3A, and 5)
+    period: 2023.09 - 2023.12
+    institution: The Catholic University of Korea
+    keywords:
+      - Orbit Anomaly Detection
+      - Transformer
+      - KOMPSAT Orbit
+  - badge: R & D
+    id: projects-kict
+    title: Korean Language Model-Based Detection of Conflicts and Duplications in National Construction Codes
+    period: 2023.08 - 2024.08
+    institution: Korea Institute of Civil Engineering and Building Technology 
+    keywords:
+      - Conflict & Duplication Detection
+      - Korean Language Model
+      - National Construction
+    link:
+      label: Link
+      link: "http://m.cennews.co.kr/news/articleView.html?idxno=19894"
+  - badge: etc.
+    title: An Easy-Tour AI Education Program
+    period: 2023.05 - 2023.12
+    institution: Deep & High
+    keywords:
+      - AI Education
+      - Lectures for Secondary & University Students
+      - Coding Support
+  - badge: University
+    title: Analysis of Gen MZ Dietary Data and Proposal of AI Application
+    period: 2022.06 - 2022.12
+    institution: The Catholic University of Korea
+    keywords:
+      - Data Analysis
+      - Application Design
+      - Health Correlation

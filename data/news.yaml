@@ -1,0 +1,92 @@
+title: News
+items:
+  - category: Patent
+    title: One patent has been filed with the Korean Intellectual Property Office.
+    date: 2026-04
+    url: "#patent-egghand"
+    body: The patent is "Foundation Model Framework for Egocentric Hand Motion Perception, Prediction, and Planning"
+    thumb:
+      image: fig/news/patent_office.jpg
+  - category: Publication
+    title: One Paper Has Been Accepted to CVPR 2026 Findings Track.
+    date: 2026-03
+    url: "#paper-egghand"
+    body: The paper is "EggHand: A Multimodal Foundation Model for Egocentric Hand Pose Forecasting"
+    thumb:
+      image: fig/news/cvpr26.jpg
+  - category: Event
+    title: Successful Poster Presentation on EggHand Held During Happy Hour Event
+    date: 2025-11
+    body: A successful "EggHand" poster session during Happy Hour fostered great networking and academic exchange.
+    thumb:
+      image:fig/news/happy_hour.jpg
+  - category: Enrollment
+    title: I Have Enrolled in the Department of Electrical Engineering and Computer Science at DGIST. 🏫
+    date: 2025-09
+    url: "https://www.dgist.ac.kr/eecs/index.do"
+    body: I have started my master's degree in the Department of Electrical Engineering and Computer Science at the DGIST.
+    thumb:
+      image:fig/news/dgist.jpg
+  - category: Graduate
+    title: I Have Graduated from The Catholic University of Korea. 🎓
+    date: 2025-08
+    url: "https://www.catholic.ac.kr/ko/index.do"
+    body: I have graduated from The Catholic University of Korea with a Bachelor of Science in "Mathematics and Computer Information Engineering."
+    thumb:
+      image:fig/news/catholic.jpg
+  - category: Project
+    title: I Participated in a Samsung LSI Project for HDR Solution Development.
+    date: 2025-04
+    url: "#projects-samsung"
+    body: I participated in the Samsung LSI project, "Development of a Generative AI-Based 16-Bit HDR Solution."
+    thumb:
+      image: fig/news/samsung-lsi.jpg
+  - category: Addmission
+    title: I Have Joined the ISL Lab! 🎓
+    date: 2025-03
+    url: "https://isldgist.github.io/"
+    body: I have joined the ISL Lab at DGIST.
+    thumb:
+      image: fig/news/isl-lab.jpg
+  - category: Publication
+    title: One Paper Has Been Accepted to Applied Sciences-Basel.
+    date: 2024-11
+    url: "#paper-abc-ensemble"
+    body: The paper is "Enhancing Skin Lesion Classification Performance with the ABC Ensemble Model"
+    thumb:
+      image: fig/news/applied-sciences.jpg
+  - category: Award
+    title: I Was Awarded the Grand Prize at the Capstone Design Competition. 🏆
+    date: 2024-01
+    url: "#honor-Capstone-Design"
+    body: I received the "Grand Prize" at the Capstone Design Competition hosted by The Catholic University of Korea.
+    thumb:
+      image: fig/news/catholic.jpg
+  - category: Project
+    title: I Participated in a Research Project for the Prosecution Office.
+    date: 2023-09
+    url: "#projects-Prosecutors"
+    body: I participated in the Prosecution Office research project, "Research on the Application of Generative AI for Prosecutorial Case Processing."
+    thumb:
+      image: fig/news/prosecution.jpg
+  - category: Addmission
+    title: I Have Joined the ADS Lab! 🎓
+    date: 2023-06
+    url: "https://sites.google.com/view/adslab0"
+    body: I have joined the NLP Lab at The Catholic University of Korea as a new undergraduate Intern.
+    thumb:
+      image: fig/news/ads-lab.jpg
+  - category: Project
+    title: I Participated in a KICT Research Project.
+    date: 2023-05
+    url: "#projects-kict"
+    body: I participated in the KICT research project, "Detecting Overlaps and Conflicts in National Construction Standard Codes Using Korean Language Models.
+    thumb:
+      image: fig/news/kict.jpg
+  - category: Addmission
+    title: I Have Joined the NLP Lab! 🎓
+    date: 2023-01
+    url: "https://midi-troodon-3dc.notion.site/Welcome-to-CUK-NLP-Lab-b1f7c3724e4045568ff76eba6e94b50d"
+    body: I have joined the NLP Lab at The Catholic University of Korea as a new undergraduate Intern.
+    thumb:
+      image: fig/news/nlp-lab.jpg

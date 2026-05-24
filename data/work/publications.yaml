@@ -1,0 +1,57 @@
+label: Publications
+items:
+#  - badge: Conference
+#    id: egghand
+#    image:
+#    image_slot: true
+#    image_alt: Publication image placeholder
+#    title: EggHand: A Multimodal Foundation Model for Egocentric Hand Pose Forecasting
+#    authors: **Jaeyoung Choi***, Hyeondong Kim*, Yujin Kim, Daehee Park†
+#    venue: CVPR Findings (2026)
+#    tags:
+#      - Hand Pose Forecasting
+#      - Knowledge Integration
+#      - Human Motion Modeling
+#    links:
+#      - label: Paper
+#        url: "https://arxiv.org/abs/2605.07642"
+#      - label: Supp
+#        url: "#supp"
+#      - label: Project
+#        url: "https://jyoun9.github.io/EggHand/"
+#      - label: Code
+#        url: "#code"
+  - badge: Conference
+    id: paper-egghand
+    image: fig/work/publications/egghand.jpg
+    image_slot: true
+    image_alt: Publication image placeholder
+    title: EggHand: A Multimodal Foundation Model for Egocentric Hand Pose Forecasting
+    authors: **Jaeyoung Choi***, Hyeondong Kim*, Yujin Kim, Daehee Park†
+    venue: CVPR Findings (2026)
+    tags:
+      - Hand Pose Forecasting
+      - Knowledge Integration
+      - Human Motion Modeling
+    links:
+      - label: Paper
+        url: "https://arxiv.org/abs/2605.07642"
+      - label: Supp
+        url: "#supp"
+      - label: Project
+        url: "https://jyoun9.github.io/EggHand/"
+  - badge: Journal
+    id: paper-abc-ensemble
+    image: fig/work/publications/abc-ensemble.jpg
+    image_slot: true
+    image_alt: Publication image placeholder
+    title: Enhancing Skin Lesion Classification Performance with the ABC Ensemble Model
+    authors: **Jaeyoung Choi**, Minji Song, Youjin Shin†
+    venue: Applied Sciences-Basel (2024)
+    tags:
+      - Skin Lesion Classification
+      - Domain Adaptation
+      - Medical A.I.
+    links:
+      - label: Paper
+        url: "#paper"

@@ -1,0 +1,44 @@
+heading:
+  - highlight: DGIST
+  - Jaeyoung Choi
+contacts:
+  - cjyoung@dgist.ac.kr
+links:
+  - label: Open ISL-Lab
+    url: https://isldgist.github.io/
+    title: Open ISL-Lab
+    color: color-yellow
+  - label: View my Essay
+    url: https://velog.io/@sju7428/posts
+    title: View my Essay
+    color: color-green
+  - label: Download my CV
+    url: https://beta.yahiarefaiea.com/Yahia_Refaiea_Resume.pdf
+    title: Download my CV
+    color: color-red
+social_links:
+  - label: GitHub
+    url: https://github.com/JYOUN9
+    title: GitHub
+    icon: fig/icon/github.svg
+    fallback_icon: fa-github
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/jyoung01/
+    title: LinkedIn
+    icon: fig/icon/linkedin.svg
+    fallback_icon: fa-linkedin
+  - label: Scholar
+    url: https://scholar.google.com/citations?user=h63uQqIAAAAJ&hl=ko
+    title: Google Scholar
+    icon: fig/icon/scholar.svg
+    fallback_icon: fa-graduation-cap
+  - label: Instagram
+    url: https://www.instagram.com/gnuoy_01/
+    title: Instagram
+    icon: fig/icon/instagram.svg
+    fallback_icon: fa-instagram
+  - label: ORCID
+    url: "#orcid"
+    title: ORCID
+    icon: fig/icon/orcid.svg
+    fallback_icon: fa-id-card-o

@@ -1,0 +1,28 @@
+label: Honors
+items:
+  - badge: Award
+    id: honor-Capstone-Design
+    image:
+    image_slot: true
+    image_alt: Award image placeholder
+    title: Grand Prize of Capstone Design Competition
+    date: January 2024
+    affiliation: The Catholic University of Korea
+    body: Awarded the Grand Prize (Catholic Univ. Capstone) for developing 'Sonic-AI,' an AI sound detection and text reporting system using STT and LLM.
+  - badge: Award
+    id: Data-Analysis-Competition
+    image:
+    image_slot: true
+    image_alt: Award image placeholder
+    title: Excellence Award of Data Analysis Competition
+    date: February 2023
+    affiliation: The Catholic University of Korea
+    body: Awarded the Excellence Award (Catholic Univ.) for proposing AI-driven diet management scenarios.
+#  - badge: Grant
+#    image:
+#    image_slot: true
+#    image_alt: Grant image placeholder
+#    title: Creative Interface Development Grant
+#    date: February 2026
+#    affiliation: Independent Design Study
+#    body: Supported continued exploration of motion, responsive layout systems, and personal web interaction patterns.

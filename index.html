@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Full Page Portfolio</title>
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("personal-page-theme") === "dark") {
+          document.documentElement.className += " theme-dark";
+        }
+      } catch (error) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:700" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css?v=20260524-09">
+  <link rel="stylesheet" href="css/full.css?v=20260524-135">
+</head>
+<body>
+  <!-- navbar header -->
+  <div class="nav-header">
+    <div class="nav-brand">
+      <a href="#home" aria-label="Go to home">
+        <img src="fig/home/logo.svg" alt="Jaeyoung Choi logo">
+      </a>
+    </div>
+    <i class="fa fa-bars fa-3x"></i>
+    <div class="header-links">
+      <ul>
+        <li class="theme-toggle-item">
+          <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+            <span class="theme-icon theme-icon-light" aria-hidden="true"></span>
+            <span class="theme-icon theme-icon-dark" aria-hidden="true"></span>
+            <i class="fa fa-moon-o theme-icon-fallback" aria-hidden="true"></i>
+          </button>
+        </li>
+        <li data-menuanchor="work"><a href="#work">WORK</a></li>
+        <li data-menuanchor="news"><a href="#news">NEWS</a></li>
+        <li data-menuanchor="biography"><a href="#biography">BIOGRAPHY</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end navbar header -->
+
+  <!-- sidebar slider -->
+  <div class="nav-screen">
+    <i class="fa fa-times fa-3x"></i>
+    <div class="nav-container">
+      <div class="nav-links">
+        <ul id='myMenu'>
+          <li data-menuanchor="biography"><a href="#biography">BIOGRAPHY</a></li>
+          <li data-menuanchor="news"><a href="#news">NEWS</a></li>
+          <li data-menuanchor="work"><a href="#work">WORK</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end navbar slider -->
+
+  <!-- begin fullpage -->
+
+  <div id="fullpage">
+
+    <!-- begin section -->
+
+    <div class="section aboutme embedded-home" data-anchor="home">
+      <div class="home-embed">
+        <div class="wrapper">
+          <canvas id="stars"></canvas>
+          <canvas id="yahia"></canvas>
+          <div class="container">
+            <div class="template color-yellow" data-template="home">
+              <main>
+                <h1>
+                  <span>A <mark>21 years</mark> old</span>
+                  <span>interaction designer</span>
+                </h1>
+                <div class="p"><span>hello@yahiarefaiea.com</span><span>(+963) 96 2295 406</span></div>
+                <div class="home-social-links" aria-label="Social links"></div>
+                <div class="links">
+                  <a class="link color-yellow" href="https://beta.yahiarefaiea.com/#bucket" title="View my bucket list" target="_blank">View my bucket list</a>
+                  <a class="link color-green" href="https://beta.yahiarefaiea.com/#secret" title="Tell me a secret" target="_blank">Tell me a secret</a>
+                  <a class="link color-red" href="https://beta.yahiarefaiea.com/Yahia_Refaiea_Resume.pdf" title="Download my resume" target="_blank">Download my resume</a>
+                </div>
+              </main>
+              <div class="home-stats" aria-label="Work counts"></div>
+            </div>
+            <div class="loading" id="identity" title="Yahia Refaiea identity">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <a class="loading" id="signature" href="https://beta.yahiarefaiea.com/" title="Go to home" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section biography-section" data-anchor="biography">
+      <div class="biography">
+        <h1 class="biography-title">Biography</h1>
+        <aside class="biography-profile">
+          <div class="biography-photo">
+            <img src="fig/biography/new-person.png" alt="Profile portrait">
+          </div>
+          <h2>Yahia Refaiea</h2>
+          <p>Interaction Designer</p>
+          <div class="experience-timeline" aria-label="Experience">
+            <h3>Experience</h3>
+            <div class="experience-item">
+              <div class="experience-marker">
+                <span>2024</span>
+                <i></i>
+              </div>
+              <div class="experience-copy">
+                <strong>Portfolio Design</strong>
+                <small>Personal website and interaction study</small>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-marker">
+                <span>2023</span>
+                <i></i>
+              </div>
+              <div class="experience-copy">
+                <strong>Front-end Practice</strong>
+                <small>Responsive layouts and UI components</small>
+              </div>
+            </div>
+            <div class="experience-item">
+              <div class="experience-marker">
+                <span>2022</span>
+                <i></i>
+              </div>
+              <div class="experience-copy">
+                <strong>Creative Coding</strong>
+                <small>Motion, particles, and visual experiments</small>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <main class="biography-content">
+          <p>I am an interaction designer focused on shaping clean, responsive, and memorable digital experiences. I enjoy turning simple ideas into interfaces that feel clear, useful, and a little personal.</p>
+          <p>My work combines visual design, front-end development, and motion details to build pages that feel natural across desktop and mobile. I care about readable layouts, gentle interaction, and making each screen easy to understand.</p>
+          <p>Recently, I have been exploring portfolio systems, creative coding, and small interface moments that make personal websites feel alive without getting in the way.</p>
+
+          <div class="biography-details">
+            <section>
+              <h2>Interests</h2>
+              <ul>
+                <li><i class="fa fa-book"></i> Interaction Design</li>
+                <li><i class="fa fa-book"></i> Front-end Development</li>
+                <li><i class="fa fa-book"></i> Creative Coding & Motion</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Education</h2>
+              <ul class="education-list">
+                <li><i class="fa fa-graduation-cap"></i><span>Design Systems & Interface Craft</span><small>Portfolio Practice</small></li>
+                <li><i class="fa fa-graduation-cap"></i><span>Responsive Web Design</span><small>Front-end Development</small></li>
+                <li><i class="fa fa-graduation-cap"></i><span>Visual Communication</span><small>Interaction Design</small></li>
+              </ul>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section news-section fp-auto-height" data-anchor="news">
+      <div class="news-content">
+        <div class="news-heading">
+          <h1 class="wow fadeInDown" data-wow-delay="0.2s">News</h1>
+        </div>
+        <div class="news-carousel">
+          <button class="news-arrow news-arrow-left" type="button" aria-label="Previous news">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </button>
+          <div class="news-list">
+            <article class="news-item wow fadeInUp" data-wow-delay="0.2s">
+              <strong class="news-category">Publication</strong>
+              <div class="news-thumb news-thumb-icml" aria-label="ICML 2026">
+                <span>ICML</span>
+                <small>International Conference<br>On Machine Learning</small>
+              </div>
+              <h2>3 papers have been accepted to ICML 2026</h2>
+              <time datetime="2026-05">2026-05</time>
+              <p>Research updates and publication details can be summarized here.</p>
+            </article>
+            <article class="news-item wow fadeInUp" data-wow-delay="0.3s">
+              <strong class="news-category">Publication</strong>
+              <div class="news-thumb news-thumb-neuro" aria-label="Neurocomputing">
+                <span>Neurocomputing</span>
+                <small>An International Journal</small>
+              </div>
+              <h2>One paper has been accepted to Neurocomputing</h2>
+              <time datetime="2026-05">2026-05</time>
+              <p>A short description for this news item can be written in this area.</p>
+            </article>
+            <article class="news-item wow fadeInUp" data-wow-delay="0.4s">
+              <strong class="news-category">Award</strong>
+              <div class="news-thumb news-thumb-award" aria-label="Science and ICT Day 2026">
+                <span>2026</span>
+                <small>Science &amp; ICT Day</small>
+              </div>
+              <h2>Prof. Minsu Cho was awarded the Presidential Commendation at the...</h2>
+              <time datetime="2026-04">2026-04</time>
+              <p>Use this space for additional award context or a brief announcement.</p>
+            </article>
+            <article class="news-item wow fadeInUp" data-wow-delay="0.5s">
+              <strong class="news-category">Award</strong>
+              <div class="news-thumb news-thumb-postech" aria-label="POSTECH">
+                <span>POSTECH</span>
+              </div>
+              <h2>Hyunmin Kim won the POSTECHIAN fellowship award.</h2>
+              <time datetime="2026-03">2026-03</time>
+              <p>Supporting notes for the fellowship news can be placed below the date.</p>
+            </article>
+          </div>
+          <button class="news-arrow news-arrow-right" type="button" aria-label="Next news">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section work-section" data-anchor="work">
+      <div class="work-content">
+        <h1 class="wow fadeInDown" data-wow-delay="0.2s">Work</h1>
+        <div class="work-filters" aria-label="Work filters">
+          <button class="work-filter is-active" type="button" data-work-filter="publications">Publications</button>
+          <button class="work-filter" type="button" data-work-filter="patents">Patents</button>
+          <button class="work-filter" type="button" data-work-filter="projects">Projects</button>
+          <button class="work-filter" type="button" data-work-filter="awards">Honors</button>
+        </div>
+        <div class="work-list">
+          <article class="work-item has-work-links" data-work-category="publications">
+            <div class="work-thumb" aria-label="Publication image placeholder"></div>
+            <span class="work-badge is-arxiv">arXiv</span>
+            <div class="work-copy">
+              <h2>BitTP: The Lightweight Trajectory Prediction Model with BitLLM for Edge-Devices</h2>
+              <p class="work-authors">Mincheol Kang*, Hyunjin Lim*, Bomin Kang*, Daehee Park</p>
+              <p class="work-venue">CVPR Findings (2026)</p>
+              <ul class="work-tags">
+                <li>LLM Quantization</li>
+                <li>On-Device A.I.</li>
+                <li>Autonomous Driving</li>
+              </ul>
+            </div>
+            <div class="work-links">
+              <a class="work-link is-paper" href="#paper" target="_self" rel="noopener" aria-label="Paper">
+                <span class="work-link-file"><i class="fa fa-file-text-o" aria-hidden="true"></i><span class="work-link-file-label">Paper</span></span>
+              </a>
+              <a class="work-link is-supp" href="#supp" target="_self" rel="noopener" aria-label="Supp">
+                <span class="work-link-file"><i class="fa fa-file-archive-o" aria-hidden="true"></i><span class="work-link-file-label">Supp</span></span>
+              </a>
+              <a class="work-link is-home" href="#project" target="_self" rel="noopener" aria-label="Project">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </a>
+              <a class="work-link is-github" href="#code" target="_self" rel="noopener" aria-label="Code">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+          <article class="work-item" data-work-category="publications">
+            <div class="work-thumb" aria-label="Publication image placeholder"></div>
+            <span class="work-badge">Conference</span>
+            <div class="work-copy">
+              <h2>EggHand: A Multimodal Foundation Model for Egocentric Hand Pose Forecasting</h2>
+              <p class="work-authors">Jaeyoung Choi*, Hyeondong Kim*, Yujin Kim, Daehee Park</p>
+              <p class="work-venue">CVPR Findings (2026)</p>
+              <ul class="work-tags">
+                <li>Hand Pose Forecasting</li>
+                <li>Knowledge Integration</li>
+                <li>Human Motion Modeling</li>
+              </ul>
+            </div>
+          </article>
+          <article class="work-item has-work-links" data-work-category="projects">
+            <span class="work-badge is-etc">etc.</span>
+            <h2>Personal Website: Responsive Portfolio Interface and Interaction System</h2>
+            <time class="work-period" datetime="2026">2026 - Present</time>
+            <p class="work-institution">Independent Design and Front-end Project</p>
+            <ul class="work-tags">
+              <li>Interaction Design</li>
+              <li>Responsive Layout</li>
+              <li>Creative Coding</li>
+            </ul>
+            <div class="work-links">
+              <a class="work-link is-link" href="#project-link" target="_self" rel="noopener" aria-label="Link">
+                <i class="fa fa-link" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+          <article class="work-item" data-work-category="projects">
+            <span class="work-badge is-university">University</span>
+            <h2>University Interface Study for Biography, News, and Work Sections</h2>
+            <time class="work-period" datetime="2026">2026</time>
+            <p class="work-institution">Personal Page Study</p>
+            <ul class="work-tags">
+              <li>Information Architecture</li>
+              <li>Section Design</li>
+              <li>UI Refinement</li>
+            </ul>
+          </article>
+          <article class="work-item has-work-links" data-work-category="patents">
+            <span class="work-badge is-domestic">Domestic</span>
+            <h2>Adaptive Interaction Layout System for Personal Web Interfaces</h2>
+            <p class="work-inventors">Yahia Refaiea</p>
+            <dl class="work-patent-meta">
+              <div>
+                <dt>Application No.</dt>
+                <dd>10-2026-0000000</dd>
+              </div>
+              <div>
+                <dt>Registration No.</dt>
+                <dd>10-0000000</dd>
+              </div>
+            </dl>
+            <div class="work-links">
+              <a class="work-link is-link" href="#patent-link" target="_self" rel="noopener" aria-label="Link">
+                <i class="fa fa-link" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+          <article class="work-item" data-work-category="patents">
+            <span class="work-badge is-international">International</span>
+            <h2>International Adaptive Interaction Layout System for Personal Web Interfaces</h2>
+            <p class="work-inventors">Yahia Refaiea</p>
+            <dl class="work-patent-meta">
+              <div>
+                <dt>Application No.</dt>
+                <dd></dd>
+              </div>
+              <div>
+                <dt>Registration No.</dt>
+                <dd></dd>
+              </div>
+            </dl>
+          </article>
+          <article class="work-item" data-work-category="awards">
+            <div class="work-thumb" aria-label="Award image placeholder"></div>
+            <span class="work-badge">Award</span>
+            <div class="work-copy">
+              <h2>Interaction Design Excellence Award</h2>
+              <time class="work-date" datetime="2026-03">March 2026</time>
+              <p class="work-affiliation">Personal Website Project</p>
+              <p class="work-description">Recognized for a responsive portfolio interface, refined visual hierarchy, and interactive first-screen experience.</p>
+            </div>
+          </article>
+          <article class="work-item" data-work-category="awards">
+            <div class="work-thumb" aria-label="Grant image placeholder"></div>
+            <span class="work-badge is-grant">Grant</span>
+            <div class="work-copy">
+              <h2>Creative Interface Development Grant</h2>
+              <time class="work-date" datetime="2026-02">February 2026</time>
+              <p class="work-affiliation">Independent Design Study</p>
+              <p class="work-description">Supported continued exploration of motion, responsive layout systems, and personal web interaction patterns.</p>
+            </div>
+          </article>
+        </div>
+        <p class="work-empty">No items yet.</p>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <footer class="site-copyright">
+      &copy; 2026 Jaeyoung Choi. All rights reserved.
+    </footer>
+
+  </div>
+  <!-- end fullpage -->
+  <script src="js/theme.js?v=20260524-02"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/content-loader.js?v=20260524-29"></script>
+  <script src="js/main.js?v=20260524-08"></script>
+  <script src="js/full.js?v=20260524-35"></script>
+</body>
+</html>
