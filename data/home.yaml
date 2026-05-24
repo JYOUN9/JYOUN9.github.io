@@ -4,9 +4,9 @@ heading:
 contacts:
   - cjyoung@dgist.ac.kr
 links:
-  - label: Open ISL-Lab
-    url: https://isldgist.github.io/
-    title: Open ISL-Lab
+  - label: Copy My Email
+    copy_email: cjyoung@dgist.ac.kr
+    title: Copy email address
     color: color-yellow
   - label: View my Essay
     url: https://velog.io/@sju7428/posts

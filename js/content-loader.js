@@ -45,6 +45,65 @@
     return renderMarkedText(value, "work-highlight");
   };
 
+  var copyText = function (value) {
+    var fallbackCopy = function () {
+      return new Promise(function (resolve, reject) {
+        var textarea = document.createElement("textarea");
+
+        textarea.value = value;
+        textarea.setAttribute("readonly", "");
+        textarea.style.position = "fixed";
+        textarea.style.left = "-9999px";
+        textarea.style.top = "-9999px";
+        document.body.appendChild(textarea);
+        textarea.select();
+
+        try {
+          if (document.execCommand("copy")) {
+            resolve();
+          } else {
+            reject(new Error("Copy command failed"));
+          }
+        } catch (error) {
+          reject(error);
+        } finally {
+          document.body.removeChild(textarea);
+        }
+      });
+    };
+
+    if (window.navigator && window.navigator.clipboard && window.navigator.clipboard.writeText) {
+      return window.navigator.clipboard.writeText(value).catch(fallbackCopy);
+    }
+
+    return fallbackCopy();
+  };
+
+  var handleHomeCopyLink = function (event) {
+    var target = event.target;
+    var link = target.closest ? target.closest("a[data-copy-email]") : null;
+
+    if (!link) {
+      return;
+    }
+
+    event.preventDefault();
+
+    copyText(link.getAttribute("data-copy-email") || "").then(function () {
+      var label = link.getAttribute("data-label") || link.textContent;
+
+      window.clearTimeout(link.copyFeedbackTimer);
+      link.textContent = "Copied";
+      link.copyFeedbackTimer = window.setTimeout(function () {
+        link.textContent = label;
+      }, 1400);
+    }).catch(function (error) {
+      if (window.console) {
+        console.warn(error.message);
+      }
+    });
+  };
+
   var parseScalar = function (value) {
     if (value == null) {
       return "";
@@ -251,16 +310,32 @@
     }
 
     if (mainLinks && data.links) {
+      if (mainLinks.getAttribute("data-copy-listener") !== "true") {
+        mainLinks.setAttribute("data-copy-listener", "true");
+        mainLinks.addEventListener("click", handleHomeCopyLink);
+      }
+
       mainLinks.innerHTML = data.links
         .map(function (item) {
+          var copyEmail = item.copy_email || "";
+          var href = copyEmail ? "mailto:" + copyEmail : item.url || "#";
+          var copyAttributes = copyEmail
+            ? '" data-copy-email="' +
+              escapeHtml(copyEmail) +
+              '" data-label="' +
+              escapeHtml(item.label || "") +
+              '"'
+            : '" target="_blank" rel="noopener"';
+
           return (
             '<a class="link ' +
             escapeHtml(item.color || "") +
             '" href="' +
-            escapeHtml(item.url || "#") +
+            escapeHtml(href) +
             '" title="' +
             escapeHtml(item.title || item.label || "") +
-            '" target="_blank">' +
+            copyAttributes +
+            ">" +
             escapeHtml(item.label || "") +
             "</a>"
           );
