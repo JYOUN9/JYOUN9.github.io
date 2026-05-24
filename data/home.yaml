@@ -13,7 +13,7 @@ links:
     title: View my Essay
     color: color-green
   - label: Download my CV
-    url: https://beta.yahiarefaiea.com/Yahia_Refaiea_Resume.pdf
+    url: fig/home/cv.pdf
     title: Download my CV
     color: color-red
 social_links:

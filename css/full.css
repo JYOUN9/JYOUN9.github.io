@@ -1667,7 +1667,7 @@ html.theme-dark .site-copyright {
 
 @media (min-width: 100px) and (max-width: 500px) {
   .fa-bars {
-    display: block !important;
+    display: none !important;
   }
 
   .header-links {
