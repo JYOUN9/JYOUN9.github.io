@@ -6,7 +6,7 @@ items:
     url: "https://www.darf-forum.kr/sub02/sub02.asp?snm=139"
     body: Attended the Daegu AI Researchers' Forum to explore the latest trends in AI research and engage in meaningful academic exchanges and networking with various experts.
     thumb:
-      image:fig/news/happy_hour.jpg
+      image:fig/news/darf.jpg
   - category: Patent
     title: One patent has been filed with the Korean Intellectual Property Office.
     date: 2026-04
