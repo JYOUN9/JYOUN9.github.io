@@ -1,5 +1,12 @@
 title: News
 items:
+  - category: Conference
+    title: Attended CVPR 2026
+    date: 2026-05
+    url: "https://cvpr.thecvf.com/virtual/2026/poster/40857"
+    body: Attended CVPR 2026 in Denver, USA, and successfully presented the paper "EggHand: A Multimodal Foundation Model for Egocentric Hand Pose Forecasting" at the Findings track.
+    thumb:
+      image:fig/news/cvpr26_attend.jpg
   - category: Event
     title: Attended the Daegu AI Researchers' Forum
     date: 2026-05
