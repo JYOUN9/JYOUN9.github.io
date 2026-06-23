@@ -43,7 +43,7 @@ items:
   - badge: R & D
     id: projects-kict
     title: Korean Language Model-Based Detection of Conflicts and Duplications in National Construction Codes
-    period: 2023.08 - 2024.08
+    period: 2023.06 - 2023.12
     institution: Korea Institute of Civil Engineering and Building Technology 
     keywords:
       - Conflict & Duplication Detection
