@@ -1,6 +1,15 @@
 label: Projects
 items:
   - badge: R & D
+    id: projects-hand-crafting
+    title: Development of high-precision hand-crafting and service technologies based on physical AI
+    period: 2026.07 - 2028.12
+    institution: KETI
+    keywords:
+      - Hand Pressure Estimation & Tactile Infusion
+      - Korean Calligraphy Skill Adaptation
+      - Haptic Feedback
+  - badge: R & D
     id: projects-samsung
     title: Development of a Generative AI-Based 16-bit HDR Solution
     period: 2025.05 - 2027.04
