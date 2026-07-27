@@ -8,7 +8,7 @@ experience_title: Experience
 experience:
   - year: 2025.03
     title: ISL Lab
-    description: M.S. Student in DGIST
+    description: M.S. & Ph.D. Integrated in DGIST
   - year: 2023.06
     title: ADS Lab
     description: Undergraduate Intern in the Catholic University of Korea
@@ -34,7 +34,7 @@ details:
     icon: fig/icon/education.svg
     items:
       - year: 2025 - Present
-        title: M.S. in Electrical Engineering and Computer Science
+        title: M.S. & Ph.D. Integrated in Electrical Engineering and Computer Science
         school: DGIST
       - year: 2020 - 2025
         title: B.S. in Math & Computer Science and Engineering
