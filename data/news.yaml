@@ -1,6 +1,13 @@
 title: News
 items:
   - category: Conference
+    title: Attended ICML 2026
+    date: 2026-07
+    url: "https://icml.cc/"
+    body: Participated in the International Conference on Machine Learning (ICML) held in Seoul and attended various academic sessions and research presentations.
+    thumb:
+      image:fig/news/icml26_attend.jpg
+  - category: Conference
     title: Attended CVPR 2026
     date: 2026-05
     url: "https://cvpr.thecvf.com/virtual/2026/poster/40857"
