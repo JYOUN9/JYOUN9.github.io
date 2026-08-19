@@ -291,11 +291,11 @@ var MOBILE_PARTICLE_OPACITY = 0.3;
 var MAP_WIDTH = 440;
 var MAP_HEIGHT = 660;
 var MAP_OFFSET_X = 500 - MAP_WIDTH * 0.5;
-var MAP_SUBJECT_SCALE = 0.7;
+var MAP_SUBJECT_SCALE = 0.75;
 var MAP_SUBJECT_SHIFT_X = -60;
 var MAP_SUBJECT_SHIFT_Y = 0;
 var MOBILE_MAP_OFFSET_X = 64;
-var MOBILE_SUBJECT_SCALE = 0.68;
+var MOBILE_SUBJECT_SCALE = 0.72;
 var MOBILE_SUBJECT_SHIFT_Y = 0;
 var MAP_ALPHA_THRESHOLD = 20;
 
@@ -356,7 +356,7 @@ function getParticleCameraY() {
 		return 32;
 	}
 
-	return -30;
+	return -10;
 }
 
 var getImageData = function (image) {
