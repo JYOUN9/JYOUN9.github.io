@@ -356,7 +356,7 @@ function getParticleCameraY() {
 		return 32;
 	}
 
-	return -10;
+	return 0;
 }
 
 var getImageData = function (image) {
