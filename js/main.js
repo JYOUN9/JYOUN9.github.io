@@ -349,14 +349,14 @@ function getParticleZoom() {
 
 function getParticleCameraY() {
 	if (window.innerWidth <= 900) {
-		return 50;
+		return 30;
 	}
 
 	if (window.innerWidth <= 1200) {
-		return 32;
+		return 12;
 	}
 
-	return 0;
+	return - 40;
 }
 
 var getImageData = function (image) {
