@@ -349,14 +349,14 @@ function getParticleZoom() {
 
 function getParticleCameraY() {
 	if (window.innerWidth <= 900) {
-		return 30;
+		return 50;
 	}
 
 	if (window.innerWidth <= 1200) {
-		return 12;
+		return 32;
 	}
 
-	return - 40;
+	return -20;
 }
 
 var getImageData = function (image) {
@@ -464,7 +464,7 @@ var drawTheMap = function () {
 	geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
 	geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
 	particles = new THREE.Points(geometry, material);
-
+  particles.position.y = 30;  
 	scene.add(particles);
 
 	requestAnimationFrame(render);
