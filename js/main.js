@@ -282,8 +282,8 @@ var Stars = {
 };
 var renderer, scene, camera, ww, wh, particles;
 var initStarted = false;
-var PARTICLE_ZOOM = 2.0;
-var MOBILE_PARTICLE_ZOOM = 1.0;
+var PARTICLE_ZOOM = 1.8;
+var MOBILE_PARTICLE_ZOOM = 0.9;
 var PARTICLE_SIZE = 2.0;
 var MOBILE_PARTICLE_SIZE = 1.0;
 var PARTICLE_OPACITY = 0.38;
