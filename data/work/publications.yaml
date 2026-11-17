@@ -21,6 +21,21 @@ items:
 #        url: "https://jyoun9.github.io/EggHand/"
 #      - label: Code
 #        url: "#code"
+Youngjin Park, Taewon Seo, Jaeyoung Choi, Myeonggeun Park, Hoyong Kwon, Jaewoo Jeong, Youngho Yoon, Daehee Park
+  - badge: Conference
+    id: paper-RSVP
+    image: fig/work/publications/RSVP.jpg
+    image_slot: true
+    image_alt: Publication image placeholder
+    title: Self-Progress Shortcuts in VLAs for Human–Robot Collaboration
+    authors: Youngjin Park, Taewon Seo, **Jaeyoung Choi***, Myeonggeun Park, Hoyong Kwon, Jaewoo Jeong, Youngho Yoon, Daehee Park†
+    venue: under review
+    tags:
+      - Human Robot Collaboration
+      - VLA Modification
+      - Robotics
+    links:
+
   - badge: Conference
     id: paper-egghand
     image: fig/work/publications/egghand.jpg
@@ -38,6 +53,8 @@ items:
         url: "https://openaccess.thecvf.com/content/CVPR2026F/papers/Choi_EggHand_A_Multimodal_Foundation_Model_for_Egocentric_Hand_Pose_Forecasting_CVPRF_2026_paper.pdf"
       - label: Supp
         url: "https://openaccess.thecvf.com/content/CVPR2026F/supplemental/Choi_EggHand_A_Multimodal_CVPRF_2026_supplemental.pdf"
+      - label: Code
+        url: "https://github.com/JYOUN9/EggHand_Code"
       - label: Project
         url: "https://jyoun9.github.io/EggHand/"
   - badge: Journal

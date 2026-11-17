@@ -794,7 +794,9 @@
         escapeHtml(item.title || "") +
         '</h2><p class="work-authors">' +
         renderWorkMarkedText(item.authors || "") +
-        '</p><p class="work-venue">' +
+        '</p><p class="work-venue' +
+        (/under[\s-]*review/i.test(String(item.venue || "")) ? " is-under-review" : "") +
+        '">' +
         escapeHtml(item.venue || "") +
         "</p>" +
         renderTags(item.tags) +

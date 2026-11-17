@@ -1398,6 +1398,14 @@ html.theme-dark .fp-slidesNav ul li a span {
   font-size: 13px;
 }
 
+.work-item[data-work-category="publications"] .work-venue.is-under-review {
+  color: #64748b;
+}
+
+html.theme-dark .work-item[data-work-category="publications"] .work-venue.is-under-review {
+  color: #9aa5a3;
+}
+
 .work-item[data-work-category="awards"] .work-date,
 .work-item[data-work-category="awards"] .work-affiliation,
 .work-item[data-work-category="awards"] .work-description {
