@@ -16,9 +16,9 @@ experience:
     title: NLP Lab
     description: Undergraduate Intern in the Catholic University of Korea
 body:
-  - I am a Master's student in the Department of Electrical Engineering and Computer Science at **DGIST**, currently conducting research at the **Intelligent Systems and Learning (ISL) Lab**.
-  - My research primarily focuses on Hand Pose Forecasting, Hand Motion Generation, and Dexterous Hand Manipulation. I am deeply interested in developing Multimodal A.I. and Physical A.I. frameworks that seamlessly connect visual perception with robotic action.
-  - Recently, my research on a multimodal foundation model for egocentric hand pose forecasting was accepted to **CVPR 2026 Findings**.
+  - I am a student in the **integrated M.S./Ph.D. program** in the Department of Electrical Engineering and Computer Science at DGIST, conducting research at the **Intelligent Systems and Learning (ISL) Lab**.
+  - My research interests center on **human and robotic hands**, including hand pose forecasting, hand motion generation, and dexterous hand manipulation. I am also interested in multimodal AI and physical AI, particularly in connecting visual perception with robotic action.
+  - I aim to publish at least one first-author paper at a top-tier **computer vision conference** each year.
 details:
   interests:
     title: Interests

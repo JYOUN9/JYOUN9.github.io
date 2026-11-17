@@ -1826,6 +1826,10 @@ html.theme-dark .site-copyright {
     margin: 18px 24px 24px;
   }
 
+  .work-item[data-work-category="publications"] .work-copy:last-child {
+    padding-bottom: 24px;
+  }
+
 }
 
 @media (max-width: 500px) {

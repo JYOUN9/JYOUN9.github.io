@@ -230,6 +230,14 @@ $(document).ready(function () {
   updateHomeShrink();
   $(window).on("scroll resize", updateHomeShrink);
 
+  // fullPage jumps to the page top when it starts and to the active section top on resize.
+  // Remember where the reader is so those jumps can be undone.
+  var lastScrollTop = $(window).scrollTop();
+
+  $(window).on("scroll", function () {
+    lastScrollTop = $(window).scrollTop();
+  });
+
   // initiate full page scroll
 
   $("#fullpage").fullpage({
@@ -241,6 +249,11 @@ $(document).ready(function () {
     anchors: ["home", "biography", "news", "work"],
     menu: "#myMenu",
     fitToSection: false,
+    lockAnchors: true,
+
+    afterResize: function () {
+      $(window).scrollTop(lastScrollTop);
+    },
 
     afterLoad: function (anchorLink, index) {
       var loadedSection = $(this);
@@ -263,6 +276,10 @@ $(document).ready(function () {
       }
     }
   });
+
+  if (!window.location.hash) {
+    $(window).scrollTop(lastScrollTop);
+  }
 
   updateHomeShrink();
 
