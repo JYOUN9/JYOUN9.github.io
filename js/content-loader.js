@@ -770,6 +770,10 @@
     return value ? " is-" + value : "";
   };
 
+  var isUnderReview = function (item) {
+    return /under[\s-]*review/i.test(String(item.venue || ""));
+  };
+
   var getWorkItemId = function (key, item, index) {
     return item.id || item.anchor || "work-" + key + "-" + (slugify(item.title || item.badge) || index + 1);
   };
@@ -795,7 +799,7 @@
         '</h2><p class="work-authors">' +
         renderWorkMarkedText(item.authors || "") +
         '</p><p class="work-venue' +
-        (/under[\s-]*review/i.test(String(item.venue || "")) ? " is-under-review" : "") +
+        (isUnderReview(item) ? " is-under-review" : "") +
         '">' +
         escapeHtml(item.venue || "") +
         "</p>" +
@@ -863,6 +867,10 @@
   };
 
   var getWorkSortValue = function (item) {
+    if (!item.sort_date && isUnderReview(item)) {
+      return Number.MAX_SAFE_INTEGER;
+    }
+
     var candidates = [
       item.sort_date,
       item.date,

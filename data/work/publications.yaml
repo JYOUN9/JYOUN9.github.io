@@ -27,7 +27,7 @@ items:
     image_slot: true
     image_alt: Publication image placeholder
     title: Self-Progress Shortcuts in VLAs for Human–Robot Collaboration
-    authors: Youngjin Park, Taewon Seo, **Jaeyoung Choi***, Myeonggeun Park, Hoyong Kwon, Jaewoo Jeong, Youngho Yoon, Daehee Park†
+    authors: Youngjin Park*, Taewon Seo*, **Jaeyoung Choi**, Myeonggeun Park, Hoyong Kwon, Jaewoo Jeong, Youngho Yoon, Daehee Park†
     venue: under review
     tags:
       - Human Robot Collaboration
@@ -56,6 +56,7 @@ items:
         url: "https://github.com/JYOUN9/EggHand_Code"
       - label: Project
         url: "https://jyoun9.github.io/EggHand/"
+
   - badge: Journal
     id: paper-abc-ensemble
     image: fig/work/publications/abc-ensemble.jpg
