@@ -277,6 +277,10 @@ $(document).ready(function () {
     }
   });
 
+  // fullPage jumps a whole section when the mouse moves with the middle button held down.
+  // Wheel scrolling is native here (autoScrolling: false), so this only removes that jump.
+  $.fn.fullpage.setMouseWheelScrolling(false);
+
   if (!window.location.hash) {
     $(window).scrollTop(lastScrollTop);
   }
